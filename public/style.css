@@ -1,0 +1,133 @@
+:root {
+    --primary-solid: #ff3333;
+    --primary--90: rgba(255, 51, 51, 0.9);
+    --primary--50: rgba(255, 51, 51, 0.5);
+    --primary--30: rgba(255, 51, 51, 0.3);
+    --secondary-solid: #1d84b5;
+    --secondary-90: rgba(28, 133, 181, 0.9);
+    --secondary-50: rgba(28, 133, 181, 0.5);
+    --secondary-30: rgba(28, 133, 181, 0.3);
+    --dark-solid: #1f1f1f;
+    --dark-90: rgba(31, 31, 31, 0.9);
+    --dark-50: rgba(31, 31, 31, 0.5);
+    --dark-30: rgba(31, 31, 31, 0.3);
+    --dark-bg: #30343f;
+    --light-bg: #fafaff;
+    --light-font: white;
+
+    --font-display: 4.6em;
+    --font-jumbo: 3.8em;
+    --font-xlarge: 3em;
+    --font-large: 2.4em;
+    --font-medium: 1.8em;
+    --font-small: 1.6em;
+    --font-xsmall: 1.4em;
+
+    --base-font: "Inter", sans-serif;
+    --alt-font: "Raleway", sans-serif;
+
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
+}
+
+
+html {
+    color: var(--dark-solid);
+    font-family: var(--base-font);
+    
+}
+ 
+
+.body{
+    background-color: antiquewhite;
+    margin-top: var(--spacing-12);
+ }
+h1 {
+    text-align: center;
+    padding: var(--spacing-128);
+    font-size: var(--font-display);
+}
+
+a {
+    font-family: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 420px){
+    .banner_title{
+        padding: var(--spacing-12);
+
+    }
+}
+
+.banner {
+    background-image: url(img/arrozheader.jpg); 
+    color: var(--light-font);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-20);
+    align-items: center;
+}
+
+.banner_title {
+    font-family: var(--alt-font);
+    font-size: var(--font-jumbo);
+    text-align: center;
+}
+
+img{
+    height: 300px;
+    width: 500px;
+}
+
+.receta-picture{
+    align-items: center;
+    display: flex;
+    max-width: 400px;
+}
+
+@media only screen and (max-width: 420px) {
+    footer {
+        padding: var(--spacing-12);
+    }
+}
+
+.footer{
+    padding: var(--spacing-8);
+}
+.footer_p {
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: var(--spacing-8);
+}
+
+@media only screen and (max-width: 420px) {
+    .footer_p {
+        margin-top: var(--spacing-8);
+    }
+}
+
+
+
